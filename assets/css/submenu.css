@@ -1,0 +1,45 @@
+body{
+
+}
+div.header{
+margin: auto;
+width: 500px;
+font-family: arial;
+}
+
+ul, ol{
+	list-style: none;
+}
+
+.nav > li{
+float: left;
+}
+
+.nav li a{
+background-color: black;
+color:white;
+text-decoration: none;
+padding: 10px 15px;
+display: block;
+
+}
+
+ul.nav li a:hover{
+background-color: #434343;
+}
+
+
+ul.nav li ul {
+display: none;
+}
+
+ul.nav li:hover > ul{
+display: block;
+}
+
+
+.nav li ul li ul {
+position: relative;
+right:-140px;
+top:0px;
+}
