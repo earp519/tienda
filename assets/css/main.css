@@ -3906,6 +3906,38 @@
 						border-top: 0 !important;
 					}
 
+		#menu ul.links li{
+		
+		}
+
+		#menu ul.links li:hover > ul{
+			display: block;
+
+		}
+
+		#menu ul.links li ul{
+			list-style: none;
+			text-align: right;
+			float: center;
+			display: none;
+			width: 100%;
+		}
+
+		#menu ul.links li ul li{
+			position: relative;
+			top:0px;
+		}
+
+		#menu ul.links li ul li a{
+			display: inline;
+			padding: 10px 15px;
+			border: hidden;
+		}
+
+		#menu ul.links li ul li a:hover{
+			background: grey;
+		}
+		
 		#menu .close {
 			-moz-transition: color 0.2s ease-in-out;
 			-webkit-transition: color 0.2s ease-in-out;
