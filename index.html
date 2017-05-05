@@ -89,28 +89,20 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+								<form method="post" action="">
 									<div class="field half first">
 										<label for="name">Nombre</label>
-										<input type="text" name="name" id="name" value="<?php if (!$enviado && isset($nombre)) echo $nombre ?>"  />
+										<input type="text" name="name" id="name" value=""  />
 									</div>
 									<div class="field half">
 										<label for="email">Correo electrónico</label>
-										<input type="email" name="email" id="email" value="<?php if (!$enviado && isset($correo)) echo $correo ?>" />
+										<input type="email" name="email" id="email" value="" />
 									</div>
 									<div class="field">
 										<label for="message">Mensaje</label>
-										<textarea name="message" id="message" rows="6"><?php if (!$enviado && isset($mensaje)) echo $mensaje ?></textarea>
+										<textarea name="message" id="message" rows="6"></textarea>
 									</div>
-									<?php if (!empty($errores)): ?>
-									<div class="alert error">
-										<?php echo $errores; ?>
-									</div>
-									<?php elseif ($enviado): ?>
-									<div class="alert success">
-										<p>Enviado Correctamente</p>
-									</div>
-									<?php endif	 ?>
+						
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="special" /></li>
 										<li><input type="reset" value="Clear" /></li>
