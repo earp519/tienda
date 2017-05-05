@@ -40,11 +40,10 @@
 					<section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1>Hi, my name is Forty</h1>
+								<h1>Bienvenido a tu Tienda Pagana</h1>
 							</header>
 							<div class="content">
-								<p>A responsive site template designed by HTML5 UP<br />
-								and released under the Creative Commons.</p>
+								<!--<p>hola a todos</p>-->
 							</div>
 						</div>
 					</section>
@@ -69,12 +68,12 @@
 									</span>
 									<header class="major">
 										<h3><a href="consultas.html" class="link">Consultas</a></h3>
-										<p>oraculos y mas</p>
+										<p>oraculos y más</p>
 									</header>
 								</article>
 							</section>
 
-						<!-- Two -->
+						<!-- Two
 							<section id="two">
 								<div class="inner">
 									<header class="major">
@@ -83,26 +82,35 @@
 									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
 								</div>
 							</section>
-
+ 						-->
 					</div>
 
 				<!-- Contact -->
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
 									<div class="field half first">
 										<label for="name">Nombre</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" name="name" id="name" value="<?php if (!$enviado && isset($nombre)) echo $nombre ?>"  />
 									</div>
 									<div class="field half">
 										<label for="email">Correo electrónico</label>
-										<input type="text" name="email" id="email" />
+										<input type="email" name="email" id="email" value="<?php if (!$enviado && isset($correo)) echo $correo ?>" />
 									</div>
 									<div class="field">
 										<label for="message">Mensaje</label>
-										<textarea name="message" id="message" rows="6"></textarea>
+										<textarea name="message" id="message" rows="6"><?php if (!$enviado && isset($mensaje)) echo $mensaje ?></textarea>
 									</div>
+									<?php if (!empty($errores)): ?>
+									<div class="alert error">
+										<?php echo $errores; ?>
+									</div>
+									<?php elseif ($enviado): ?>
+									<div class="alert success">
+										<p>Enviado Correctamente</p>
+									</div>
+									<?php endif	 ?>
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="special" /></li>
 										<li><input type="reset" value="Clear" /></li>
