@@ -2266,12 +2266,12 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 		padding-left: 1em;
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			padding-left: 0.3em;
 		}
 
 		ul.alt {
@@ -2974,25 +2974,26 @@
 				border-radius: 0;
 				display: block;
 				position: relative;
-				width: 30%;
+				width: 20%;
 			}
 
 				.spotlights > section > .image img {
 					border-radius: 0;
 					display: block;
-					width: 100%;
+					width: 110%;
+					padding-right: 20px;
 				}
 
 				.spotlights > section > .image:before {
 					background: rgba(36, 41, 67, 0.9);
 					content: '';
 					display: block;
-					height: 100%;
+					height: 90%;
 					left: 0;
 					opacity: 0;
 					position: absolute;
 					top: 0;
-					width: 100%;
+					width: 110%;
 				}
 
 			.spotlights > section > .content {
@@ -3044,7 +3045,7 @@
 			}
 
 			.spotlights > section > .content {
-				width: 60%;
+				width: 50%;
 			}
 
 		}
@@ -3052,7 +3053,7 @@
 		@media screen and (max-width: 1280px) {
 
 			.spotlights > section > .image {
-				width: 45%;
+				width: 40%;
 			}
 
 			.spotlights > section > .content {
@@ -3889,8 +3890,8 @@
 						border: 0;
 						border-top: solid 1px rgba(212, 212, 255, 0.1);
 						display: block;
-						font-size: 0.8em;
-						font-weight: 600;
+						font-size: 0.7em;
+						font-weight: 500;
 						letter-spacing: 0.25em;
 						line-height: 4em;
 						text-decoration: none;
@@ -3899,7 +3900,7 @@
 
 					#menu ul.links > li > .button {
 						display: block;
-						margin: 0.5em 0 0 0;
+						margin: 0.3em 0 0 0;
 					}
 
 					#menu ul.links > li:first-child > a:not(.button) {
