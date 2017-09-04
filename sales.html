@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Curiosidades</title>
+		<title>Sales</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -22,7 +22,7 @@
 				<!-- Header -->
 				<!-- Note: The "styleN" class below should match that of the banner element. -->
 					<header id="header" class="alt style2">
-						<a href="index.html" class="logo"><strong>Imanes</strong> 
+						<a href="index.html" class="logo"><strong>Sales</strong> 
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -52,11 +52,11 @@
 								<img src="images/pic07.jpg" alt="" />
 							</span>
 							<header class="major">
-								<h1>Imanes</h1>
+								<h1>Sales</h1>
 							</header>
 							<div class="content">
-								<p>Pequeñas piezas para adornar tu refrigerador y al mismo tiempo recordarte lo que es importante que veas.<br />
-								 La simbología que ofrecemos es completamente mágica y va desde animales de poder, pentáculos, triquetas, triskells, signos zodiacales, runas, brujas y alguna que otra curiosidad.</p>
+								<p>Sales para baño y cocina que te ayudaran a limpiar y purificar tu cuerpo<br />
+								 por dentro y por fuera</p>
 							</div>
 						</div>
 					</section>
@@ -83,17 +83,17 @@
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Imanes Bruja Malvada</h3>
+												<h3>Sales para baño</h3>
 											</header>
 											<p>Características:</p>
 											<ul>
-												<li>Pintado a mano </li>
-												<li>Varios colores definidos por el usuario</li>
-												<li>Diseños creativos, artísticos y originales</li>
-												<li>Este articulo solo esta disponible bajo pedido</li>
+												<li>Rosas</li>
+												<li>Eucalipto/Menta</li>
+												<li></li>
+												<li></li>
 											</ul>
 											<ul class="actions">
-												<li><a href="https://www.kichink.com/buy/1480837/gaiashop/imanes-bruja-malvada" class="button">Comprar</a></li>
+												<li><a href="" class="button">Comprar</a></li>
 											</ul>
 										</div>
 									</div>
@@ -445,7 +445,7 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="POST" action="procesar.php">
+								<form action="sales.html" method="POST" >
 									<div class="field half first">
 										<label for="name">Nombre</label>
 										<input type="text" name="name" id="name" />
@@ -463,6 +463,22 @@
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
+<? 
+}else{ 
+   	//Estoy recibiendo el formulario, compongo el cuerpo 
+   	$cuerpo = "Formulario enviado\n"; 
+   	$cuerpo .= "Nombre: " . $HTTP_POST_VARS["name"] . "\n"; 
+   	$cuerpo .= "Email: " . $HTTP_POST_VARS["email"] . "\n"; 
+   	$cuerpo .= "Comentarios: " . $HTTP_POST_VARS["message"] . "\n"; 
+
+   	//mando el correo... 
+   	mail("contacto@earp519.com","Formulario recibido",$cuerpo); 
+
+   	//doy las gracias por el envío 
+   	echo "Gracias por rellenar el formulario. Se ha enviado correctamente."; 
+} 
+?> 
+
 							</section>
 							<section class="split">
 								<section>

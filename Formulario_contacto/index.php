@@ -7,7 +7,7 @@ $enviado='';
 if (isset($_POST['submit'])) {
 	$name = $_POST['name'];
 	$email = $_POST['email'];
-	$mensaje = $_POST['mensaje'];
+	$mensaje = $_POST['message'];
 
 	if(!empty($name)){
 		$name = trim($name);
@@ -43,5 +43,5 @@ if (isset($_POST['submit'])) {
 	}
 }
 
-require 'index.view.php';
+require 'imanes.html';
  ?>
