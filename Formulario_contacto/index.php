@@ -43,5 +43,5 @@ if (isset($_POST['submit'])) {
 	}
 }
 
-require 'imanes.html';
+require 'consultas.html';
  ?>

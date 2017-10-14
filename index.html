@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/6f9c8a52130ed2f331348667f/8019d83eeddcecd2a63229d88.js");</script>
 	</head>
 	<body>
 
@@ -86,25 +87,25 @@
 					</div>
 
 				<!-- Contact -->
+
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="">
+								<form method="post" action="PHP/enviar.php">
 									<div class="field half first">
 										<label for="name">Nombre</label>
-										<input type="text" name="name" id="name" value=""  />
+										<input type="text" name="name" id="name" required />
 									</div>
 									<div class="field half">
 										<label for="email">Correo electrónico</label>
-										<input type="email" name="email" id="email" value="" />
+										<input type="email" name="email" id="email" required/>
 									</div>
 									<div class="field">
 										<label for="message">Mensaje</label>
 										<textarea name="message" id="message" rows="6"></textarea>
 									</div>
-						
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="submit" value="Send Message" class="special" onclick="alert('¿tus datos son correctos?')" /></li>
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
@@ -152,7 +153,7 @@
 						</div>
 					</footer>
 
-			</div>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
