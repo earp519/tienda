@@ -36,7 +36,7 @@
 								<ul>
 									<li><a href="herramientas.html">Herramientas</a></li>
 									<li><a href="joyeria.html">Joyeria Pagana</a></li>
-									<li><a href="deidades.html">Figuras Mitologicas</a></li>
+									<!--<li><a href="deidades.html">Figuras Mitologicas</a></li> -->
 								</ul>
 							</li>
 							<li><a href="consulta.html">Consulta</a></li>
@@ -463,21 +463,6 @@
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
-<? 
-}else{ 
-   	//Estoy recibiendo el formulario, compongo el cuerpo 
-   	$cuerpo = "Formulario enviado\n"; 
-   	$cuerpo .= "Nombre: " . $HTTP_POST_VARS["name"] . "\n"; 
-   	$cuerpo .= "Email: " . $HTTP_POST_VARS["email"] . "\n"; 
-   	$cuerpo .= "Comentarios: " . $HTTP_POST_VARS["message"] . "\n"; 
-
-   	//mando el correo... 
-   	mail("contacto@earp519.com","Formulario recibido",$cuerpo); 
-
-   	//doy las gracias por el envío 
-   	echo "Gracias por rellenar el formulario. Se ha enviado correctamente."; 
-} 
-?> 
 
 							</section>
 							<section class="split">
@@ -485,7 +470,7 @@
 									<div class="contact-method">
 										<span class="icon alt fa-envelope"></span>
 										<h3>Correo electrónico</h3>
-										<a href="#">contacto@algo.com</a>
+										<a href="#">contacto@brujula.xyz</a>
 									</div>
 								</section>
 								<section>
